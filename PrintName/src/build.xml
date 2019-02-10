@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="compile">
-	<property name="src.java.dir" location="./src/"/>
+	<property name="src.java.dir" location="./src"/>
 	<property name="src.test.dir" location="./src/test"/>
 	<property name="result.dir" location="./target"/>
 	<property name="result.javaclasses.dir" location="${result.dir}/classes"/>
