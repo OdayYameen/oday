@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view</title>
+
+<style type="text/css">
+
+    button {
+        margin: 10px;
+        height: 40px;
+        width: 50px;
+        padding: 5px;
+
+
+    }
+
+</style>
+</head>
+<body >
+
+<script type="text/javascript" src="controler.js"></script>
+<script type="text/javascript" src="model.js"></script>
+
+<script type="text/javascript">
+
+    var cont=new Controler(new model());
+</script>
+
+
+<nav style="background-color: aqua;width: 10cm;height: 10cm;position: relative;left: 15cm;top: 5cm;border-radius: 25px">
+<div>
+    <input type="text" id="txtbox" style="width: 8cm;position: relative;left: 1cm;top: .5cm;">
+</div>
+<div style="position: relative;left: 1cm;top: 1cm;">
+
+    <nav>
+       <button  onclick="cont.setValue('1')">1</button>
+        <button onclick="cont.setValue('2')">2</button>
+        <button onclick="cont.setValue('3')">3</button>
+        <button  onclick="cont.setValue('Math.sqrt(')">sqrt</button>
+    </nav>
+    <nav>
+
+        <button onclick="cont.setValue('4')">4</button>
+        <button onclick="cont.setValue('5')">5</button>
+        <button onclick="cont.setValue('6')">6</button>
+        <button onclick="cont.setValue('%')">%</button>
+
+    </nav>
+
+    <nav>
+
+        <button onclick="cont.setValue('7')">7</button>
+        <button onclick="cont.setValue('8')">8</button>
+        <button onclick="cont.setValue('9')">9</button>
+        <button onclick="cont.setValue('/')">/</button>
+
+    </nav>
+
+<nav>
+    <button onclick="cont.setValue('*')">*</button>
+    <button onclick="cont.setValue('+')">+</button>
+    <button onclick="cont.setValue('-')">-</button>
+    <button onclick="cont.ToCalc()">=</button>
+
+
+</nav>
+
+<nav >
+    <button onclick="cont.setValue('(')">(</button>
+    <button onclick="cont.setValue(')')">)</button>
+    <button onclick="cont.ClearTxt()">C</button>
+    <button onclick="cont.setValue('.')">.</button>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</nav>
+
+
+
+
+</body>
+</html>
